@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Future | Jonah Despain</title>
   <meta name="description" content="Jonah Despain's post-secondary plans: Quantum Systems Engineering at Colorado School of Mines or CU Boulder.">
+  <meta name="theme-color" content="#0d0c13">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cabin:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">Jonah <span>Despain</span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="emblem" aria-hidden="true"></span><span>Despain - Capstone</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="employability.html">Employability</a></li>
-          <li><a href="projects.html">Projects &amp; Activities</a></li>
+          <li><a href="projects.html">Project &amp; Activities</a></li>
           <li><a href="future.html" aria-current="page">Future</a></li>
         </ul>
       </nav>
@@ -30,70 +31,70 @@
   </header>
 
   <main id="main">
-    <div class="page-title">
-      <div class="wrap">
-        <p class="eyebrow">04</p>
-        <h1>Future</h1>
-        <p class="lede">Post-secondary plans.</p>
-      </div>
+    <section class="banner" data-scene="future">
+      <div class="rail" aria-hidden="true"></div>
+      <h1 class="title"><span class="t-main" style="font-weight:900">Future</span></h1>
+    </section>
+
+    <div class="band">
+      <nav class="wrap" aria-label="Page navigation">
+        <a class="btn-outline" href="projects.html">Previous</a>
+        <a class="btn-outline" href="index.html">Home</a>
+      </nav>
     </div>
 
-    <section class="block">
-      <div class="wrap">
-        <h2>The plan</h2>
-        <dl class="facts">
-          <div class="fact reveal"><dt>Schools</dt><dd>Colorado School of Mines or CU Boulder</dd></div>
-          <div class="fact reveal"><dt>Major</dt><dd>Quantum Systems Engineering</dd></div>
-          <div class="fact reveal"><dt>Minor</dt><dd>Physics</dd></div>
-        </dl>
-        <div class="prose reveal">
-          <p>I would love to attend the Colorado School of Mines in Golden, Colorado, or CU Boulder in Boulder, Colorado, because both have good quantum programs and physics programs.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="wrap">
-        <h2>The two schools</h2>
-        <div class="card-grid">
-          <div class="card college reveal">
-            <div class="year">1874</div>
-            <h3>Colorado School of Mines</h3>
-            <p>Established in 1874. Located in Golden, Colorado.</p>
-          </div>
-          <div class="card college reveal">
-            <div class="year">1876</div>
-            <h3>CU Boulder</h3>
-            <p>Established in 1876. Located in Boulder, Colorado.</p>
+    <section class="sec">
+      <div class="wrap duo">
+        <div class="reveal">
+          <!-- TODO: add assets/mines.jpg and assets/cu-boulder.jpg -->
+          <div class="carousel" data-carousel>
+            <div class="frame">
+              <div class="inner">
+                <div class="slides">
+                  <div class="slide"><figure><img src="assets/mines.jpg" alt="Colorado School of Mines" width="1200" height="800"><figcaption>Established in 1874 : Located in Golden, Colorado.</figcaption></figure></div>
+                  <div class="slide"><figure><img src="assets/cu-boulder.jpg" alt="CU Boulder" width="1200" height="800"><figcaption>Established in 1876 : Located in Boulder, Colorado.</figcaption></figure></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="wrap">
-        <h2>Career presentation</h2>
-        <!-- TODO: embed your career presentation here, e.g. a Google Slides "Publish to web" iframe,
-             or link a PDF: <a class="btn" href="assets/career-presentation.pdf">View the presentation</a> -->
-        <div class="placeholder reveal">
-          <span>Career presentation<br><code>Add an embed or link in future.html</code></span>
+        <div class="reveal script-lines">
+          <h2 class="heading italic" style="margin-bottom:26px;font-size:2.3rem">Post Secondary Plans</h2>
+          <p>Attend the School of Mines or CU Boulder</p>
+          <p>Major: Quantum Systems Engineering</p>
+          <p>Minor: physics</p>
+          <p class="body">I would love to attend the Colorado School of Mines located in Golden, Colorado or CU Boulder located in Boulder, Colorado because both have good Quantum programs and Physics programs.</p>
         </div>
       </div>
     </section>
 
-    <nav class="wrap pager" aria-label="Page navigation">
-      <a href="projects.html"><small>Previous</small>Projects &amp; Activities</a>
-      <a class="next" href="index.html"><small>Back to</small>Home</a>
-    </nav>
+    <section class="sec">
+      <div class="wrap">
+        <h2 class="label" style="margin-bottom:22px">Career presentation</h2>
+        <!-- TODO: embed your presentation. In Google Slides choose File > Share > Publish to web > Embed, then paste the iframe inside .embed below
+             (replace the placeholder), or save slides as images and use a carousel like the other pages. -->
+        <div class="frame" style="max-width:640px">
+          <div class="inner embed">
+            <div class="placeholder" style="height:100%"><span>Career presentation<br><code>Paste your Google Slides embed in future.html</code></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="band">
+      <nav class="wrap" aria-label="Page navigation">
+        <a class="btn-outline" href="projects.html">Previous</a>
+        <a class="btn-outline" href="index.html">Home</a>
+      </nav>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <span>&copy; Jonah Despain</span>
-      <a href="mailto:DespainJonah@gmail.com">DespainJonah@gmail.com</a>
-    </div>
+    <a class="btn-outline wide" href="index.html">---- Home ----</a>
+    <small><a href="mailto:DespainJonah@gmail.com">DespainJonah@gmail.com</a></small>
   </footer>
 
+  <script src="steam.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
