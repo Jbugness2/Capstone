@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me | Jonah Despain</title>
   <meta name="description" content="Jonah Despain's senior quote, personality tests, bucket list, and reflection on connections.">
+  <meta name="theme-color" content="#0d0c13">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cabin:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">Jonah <span>Despain</span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="emblem" aria-hidden="true"></span><span>Despain - Capstone</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" aria-current="page">About Me</a></li>
           <li><a href="employability.html">Employability</a></li>
-          <li><a href="projects.html">Projects &amp; Activities</a></li>
+          <li><a href="projects.html">Project &amp; Activities</a></li>
           <li><a href="future.html">Future</a></li>
         </ul>
       </nav>
@@ -30,71 +31,86 @@
   </header>
 
   <main id="main">
-    <div class="page-title">
-      <div class="wrap">
-        <p class="eyebrow">01</p>
-        <h1>About Me</h1>
-        <p class="lede">Who I am, what I'm aiming for, and who helped me get here.</p>
-      </div>
+    <section class="banner" data-scene="about">
+      <h1 class="title"><span class="t-main">About</span><span class="t-script">Me</span></h1>
+    </section>
+
+    <div class="band">
+      <nav class="wrap" aria-label="Page navigation">
+        <a class="btn-outline" href="index.html">Previous</a>
+        <a class="btn-outline" href="employability.html">Next</a>
+      </nav>
     </div>
 
-    <section class="block">
-      <div class="wrap">
-        <h2>Senior Quote</h2>
-        <blockquote class="quote reveal">
-          &ldquo;Put two smart people together, and they will eventually find their common stupidity, and in so doing become idiots.&rdquo;
-          <cite>Hoid, <em>The Stormlight Archive</em></cite>
-        </blockquote>
+    <section class="sec">
+      <div class="wrap row reveal">
+        <h2 class="label">Senior Quote</h2>
+        <p style="margin:0">&ldquo;Put two smart people together, and they will eventually find their common stupidity, and in so doing become idiots.&rdquo; &ndash; Hoid, <em>The Stormlight Archive</em>.</p>
       </div>
     </section>
 
-    <section class="block">
-      <div class="wrap split">
-        <div>
-          <h2>Bucket List</h2>
+    <section class="sec">
+      <div class="wrap duo">
+        <div class="reveal">
+          <h2 class="label center" style="margin-bottom:22px">Personality Tests</h2>
+          <div class="carousel" data-carousel>
+            <div class="frame">
+              <div class="inner">
+                <div class="slides">
+                  <div class="slide">
+                    <div class="riasec">
+                      <h3>RIASEC &nbsp;|&nbsp; INTEREST PROFILE</h3>
+                      <p class="sub">The areas that stand out most</p>
+                      <div class="item"><span class="num">01</span><div><strong>Realistic</strong><span class="d">Hands-on &bull; practical &bull; action-oriented</span></div></div>
+                      <div class="item"><span class="num">02</span><div><strong>Conventional</strong><span class="d">Organized &bull; detail-focused &bull; structured</span></div></div>
+                      <div class="item"><span class="num">03</span><div><strong>Social</strong><span class="d">Helpful &bull; collaborative &bull; people-focused</span></div></div>
+                      <p class="foot">Top three interests from your assessment</p>
+                    </div>
+                  </div>
+                  <!-- TODO: add more test results as extra slides, e.g.
+                  <div class="slide"><img src="assets/personality-2.png" alt="Personality test result 2"></div>
+                  Dots and arrows appear automatically when there are two or more slides. -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <h2 class="heading left italic">Bucket List</h2>
           <ol class="bucket">
-            <li class="reveal">Have a wonderful family</li>
-            <li class="reveal">Serve a mission for my church</li>
-            <li class="reveal">Travel the world</li>
-            <li class="reveal">Live in a supportive community</li>
-            <li class="reveal">Own several properties</li>
-            <li class="reveal">Stay close with my friends and family</li>
-            <li class="reveal">Make a game or useful app</li>
-            <li class="reveal">Be good at sketching</li>
+            <li>Have a wonderful Family</li>
+            <li>Serve a mission for my church</li>
+            <li>Travel the world</li>
+            <li>Live in a supportive community</li>
+            <li>Own several properties</li>
+            <li>Stay close with my friends and family</li>
+            <li>Make a game or useful app</li>
+            <li>Be good at sketching</li>
           </ol>
         </div>
-        <div>
-          <h2>Personality Tests</h2>
-          <!-- TODO: add a screenshot of your personality test results as assets/personality.png -->
-          <figure class="media reveal">
-            <img src="assets/personality.png" alt="My personality test results" width="800" height="600">
-          </figure>
-        </div>
       </div>
     </section>
 
-    <section class="block">
-      <div class="wrap">
-        <h2>Connections, like gears</h2>
-        <div class="prose reveal">
-          <p>I have grown through my connections to others. Over the year I have done several extracurriculars, including but not limited to VEX, soccer, and volleyball. Through all of these I have found friends to support me and help me grow. These connections, like gears, are necessary for overall function.</p>
-        </div>
+    <section class="sec">
+      <div class="wrap reveal">
+        <p style="margin:0;font-weight:500">I have grown through my connections to others. Over the year I have done several extracurriculars, including but not limited to VEX, soccer, and volleyball. Through all of these I have found friends to support me and help me grow. These connections, like gears, are necessary for overall function.</p>
       </div>
     </section>
 
-    <nav class="wrap pager" aria-label="Page navigation">
-      <a href="index.html"><small>Previous</small>Home</a>
-      <a class="next" href="employability.html"><small>Next</small>Employability</a>
-    </nav>
+    <div class="band">
+      <nav class="wrap" aria-label="Page navigation">
+        <a class="btn-outline" href="index.html">Previous</a>
+        <a class="btn-outline" href="employability.html">Next</a>
+      </nav>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <span>&copy; Jonah Despain</span>
-      <a href="mailto:DespainJonah@gmail.com">DespainJonah@gmail.com</a>
-    </div>
+    <a class="btn-outline wide" href="index.html">---- Home ----</a>
+    <small><a href="mailto:DespainJonah@gmail.com">DespainJonah@gmail.com</a></small>
   </footer>
 
+  <script src="steam.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
