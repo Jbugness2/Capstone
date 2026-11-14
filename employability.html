@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Employability | Jonah Despain</title>
   <meta name="description" content="Jonah Despain's résumé and letters.">
+  <meta name="theme-color" content="#0d0c13">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cabin:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">Jonah <span>Despain</span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="emblem" aria-hidden="true"></span><span>Despain - Capstone</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="employability.html" aria-current="page">Employability</a></li>
-          <li><a href="projects.html">Projects &amp; Activities</a></li>
+          <li><a href="projects.html">Project &amp; Activities</a></li>
           <li><a href="future.html">Future</a></li>
         </ul>
       </nav>
@@ -30,54 +31,108 @@
   </header>
 
   <main id="main">
-    <div class="page-title">
-      <div class="wrap">
-        <p class="eyebrow">02</p>
-        <h1>Employability</h1>
-        <p class="lede">My r&eacute;sum&eacute; and letters.</p>
-      </div>
+    <section class="banner" data-scene="employability">
+      <div class="rail" aria-hidden="true"></div>
+      <h1 class="title"><span class="t-main">Employability</span></h1>
+    </section>
+
+    <div class="band">
+      <nav class="wrap" aria-label="Page navigation">
+        <a class="btn-outline" href="about.html">Previous</a>
+        <a class="btn-outline" href="projects.html">Next</a>
+      </nav>
     </div>
 
-    <section class="block">
+    <section class="sec">
       <div class="wrap">
-        <h2>R&eacute;sum&eacute;</h2>
-        <!-- TODO: export your résumé as assets/resume.png (and optionally assets/resume.pdf) -->
-        <figure class="media reveal">
-          <img src="assets/resume.png" alt="Jonah Despain's résumé" width="850" height="1100">
-        </figure>
+        <h2 class="heading">R&eacute;sum&eacute;</h2>
+        <article class="resume reveal" aria-label="R&eacute;sum&eacute; of Jonah Despain">
+          <h3 class="name">Jonah Despain</h3>
+          <p class="meta">Windsor, Colorado &nbsp;|&nbsp; Despainjonah@gmail.com</p>
+          <!-- Add your phone number to the line above if you want it public. -->
+          <p class="roles">Student | Math Tutor | Team Contributor</p>
+          <div class="rule"></div>
+          <div class="cols">
+            <aside class="panel side">
+              <section>
+                <h3>Profile</h3>
+                <p>A positive, cooperative student who values doing quality work, treating others with understanding, and continuing to learn. Interested in building practical skills and gaining experience that supports long-term personal and professional growth.</p>
+              </section>
+              <section>
+                <h3>Core Skills</h3>
+                <p class="skills">Communication<br>Problem-solving<br>Hands-on work</p>
+              </section>
+              <section>
+                <h3>Interests</h3>
+                <p>Programming<br>Helping people</p>
+              </section>
+              <section>
+                <h3>Community Service</h3>
+                <p>Church, food banks, and orphanages</p>
+              </section>
+              <section>
+                <h3>Personal Approach</h3>
+                <p>Stay positive. Work cooperatively. Be dependable. Keep learning.</p>
+              </section>
+            </aside>
+            <div class="panel main">
+              <section>
+                <h3>Experience</h3>
+                <p class="job"><b>Math Tutor</b> <span class="pipe">|</span> <b>Windsor Charter Academy</b><span class="d yr">2024</span></p>
+                <p style="margin:0;color:#cfcabc;font-size:.88rem">Supported math instruction at school. Responsibilities included arriving on time and helping provide instruction to students. This experience strengthened an interest in helping others learn and sharing knowledge.</p>
+              </section>
+              <section>
+                <h3>Education</h3>
+                <p class="job" style="margin:0"><b>Windsor Charter Academy</b> <span class="pipe">|</span> <b>Senior</b><span class="d">GPA: 3.5 &nbsp;&bull;&nbsp; Enrolled in several AIMS classes</span></p>
+              </section>
+              <section>
+                <h3>Extracurricular Activities</h3>
+                <p class="job"><b>VEX</b> <span class="pipe">|</span> <span class="yr">2022-2025</span><span class="d">Developed problem-solving skills and determination through participation.</span></p>
+                <p class="job"><b>Soccer</b> <span class="pipe">|</span> <span class="yr">2020-2025</span><span class="d">Built teamwork and perseverance while participating with a team.</span></p>
+                <p class="job"><b>Volleyball</b> <span class="pipe">|</span> <span class="yr">2025</span><span class="d">Learned the importance of trust and relying on others.</span></p>
+                <p class="job" style="margin:0"><b>Math Tutoring</b> <span class="pipe">|</span> <span class="yr">2024</span><span class="d">Gained experience explaining ideas, teaching, and taking a leadership role.</span></p>
+              </section>
+              <section>
+                <h3>Career &amp; Personal Goals</h3>
+                <p style="margin:0;color:#cfcabc;font-size:.88rem">Continue developing useful skills, approach new responsibilities with a positive attitude, work well with others, and learn from each opportunity.</p>
+              </section>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="block">
-      <div class="wrap">
-        <h2>Letters</h2>
-        <!-- TODO: add assets/letter-1.png and assets/letter-2.png -->
-        <div class="split">
-          <figure class="media reveal">
-            <img src="assets/letter-1.png" alt="Letter 1" width="850" height="1100">
-            <figcaption>Letter 1</figcaption>
-          </figure>
-          <figure class="media reveal">
-            <img src="assets/letter-2.png" alt="Letter 2" width="850" height="1100">
-            <figcaption>Letter 2</figcaption>
-          </figure>
+    <section class="sec">
+      <div class="wrap" style="max-width:640px">
+        <h2 class="heading">Letters</h2>
+        <!-- TODO: add assets/letter-1.png and assets/letter-2.png (more slides can be added the same way) -->
+        <div class="carousel" data-carousel>
+          <div class="frame">
+            <div class="inner">
+              <div class="slides">
+                <div class="slide"><figure><img src="assets/letter-1.png" alt="Letter 1" width="850" height="1100"><figcaption>Letter 1</figcaption></figure></div>
+                <div class="slide"><figure><img src="assets/letter-2.png" alt="Letter 2" width="850" height="1100"><figcaption>Letter 2</figcaption></figure></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <nav class="wrap pager" aria-label="Page navigation">
-      <a href="about.html"><small>Previous</small>About Me</a>
-      <a class="next" href="projects.html"><small>Next</small>Projects &amp; Activities</a>
-    </nav>
+    <div class="band">
+      <nav class="wrap" aria-label="Page navigation">
+        <a class="btn-outline" href="about.html">Previous</a>
+        <a class="btn-outline" href="projects.html">Next</a>
+      </nav>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <span>&copy; Jonah Despain</span>
-      <a href="mailto:DespainJonah@gmail.com">DespainJonah@gmail.com</a>
-    </div>
+    <a class="btn-outline wide" href="index.html">---- Home ----</a>
+    <small><a href="mailto:DespainJonah@gmail.com">DespainJonah@gmail.com</a></small>
   </footer>
 
+  <script src="steam.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
